@@ -1,7 +1,11 @@
 name: Pylint
 
 on: [push]
-  
+
+env:
+  ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+  APPLICATION_NAME: app2
+
 jobs:
   lint:
     runs-on: ubuntu-18.04
