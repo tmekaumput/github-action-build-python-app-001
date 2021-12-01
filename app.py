@@ -9,8 +9,7 @@ APP = Flask(__name__)
 
 # Load the data
 with open("data.json", "r") as data_file_handle:
-MASCOTS = json.load(data_file_handle)
-data_file_handle.close()
+	MASCOTS = json.load(data_file_handle)
 
 @APP.route('/', methods=['GET'])
 def get_mascots():
